@@ -18,7 +18,7 @@ function install_plugins() {
 # https://github.com/neoclide
 function install_coc_packages() {
   cd ~/.vim/bundle/coc.nvim && npm i
-  vim -c ':CocInstall coc-json coc-tsserver coc-python coc-css coc-yaml coc-prettier coc-git coc-html coc.nvim'
+  vim -c ':CocInstall coc-json coc-tsserver coc-python coc-css coc-yaml coc-prettier coc-git coc-html coc.nvim coc-jedi'
 }
 
 function reload_envs() {
