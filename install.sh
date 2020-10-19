@@ -10,7 +10,7 @@ function install_vim() {
 
 function install_vimrc_mac() {
   ln mac.vimrc ~/.vimrc
-  ln tmux.conf ~/tmux.conf
+  ln .tmux.conf ~/.tmux.conf
 }
 
 function install_plugin_manager() {
@@ -31,6 +31,7 @@ function install_coc_packages() {
 
 function reload_envs() {
   source ~/.bash_profile
+  source ~/.bash_aliases
   tmux source-file ~/.tmux.conf
 }
 
@@ -46,12 +47,14 @@ function install_mac() {
 # Debian
 
 function install_vimrc_debian() {
+  rm ~/.vimrc
+  rm ~/.tmux.conf
   ln debian.vimrc ~/.vimrc
-  ln tmux.conf ~/tmux.conf
+  ln .tmux.conf ~/.tmux.conf
 }
 
 function install_debian() {
-  install_vim
+  #install_vim
   install_vimrc_debian
   install_plugin_manager
   install_plugins
