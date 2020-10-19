@@ -49,8 +49,8 @@ set expandtab
 " Will make the indent go to the next tabstop
 set smarttab
 
-" -- theme --
 syntax enable
+set backspace=indent,eol,start
 
 " gruvbox
 set background=dark    " Setting dark mode
